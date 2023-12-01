@@ -1,0 +1,38 @@
+spring:
+  profiles.active: local
+  main.banner-mode: off
+  datasource:
+    url: jdbc:mysql://localhost:3306/deployapidb
+    username: root
+    password: admin123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    sslmode: require
+  jpa:
+    open-in-view: false
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: github-client-id
+            clientSecret: github-client-secret
+
+  jackson:
+    default-property-inclusion: use_defaults
+    serialization:
+      INDENT_OUTPUT: true
+server:
+  port: 8080
+  compression.enabled: true
+  http2.enabled: true
+  servlet.context-path: /rest/api
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
