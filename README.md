@@ -15,15 +15,14 @@ mysql -uroot -p
 password : admin123
 ```
 
-###Create project from https://start.spring.io
+### Create project from https://start.spring.io
 
 Add dependency :
-
-Spring Boot DevTools DEVELOPER TOOLS,
-Spring Data JPA SQL,
-Spring Web WEB,
-MySQL Driver SQL,
-Spring Security SECURITY,
++ Spring Boot DevTools DEVELOPER TOOLS.
++ Spring Data JPA SQL.
++ Spring Web WEB.
++ MySQL Driver SQL.
++ Spring Security SECURITY.
 
 ## Steps to Setup
 
